@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Georgia, serif, Helvetica Neue, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Georgia, serif, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
 }
@@ -89,7 +89,7 @@ a {
     background-color: #6d545460;
     border-color: #614242;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgb(167, 58, 58/ 25%) !important;
+    box-shadow: 0 4px 8px rgb(167, 58, 58 / 25%) !important;
 }
 
 /* ===== Formulario ===== */
@@ -102,7 +102,7 @@ a {
 
 .form-control:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgb(135, 148, 62/ 50%) !important;
+    box-shadow: 0 0 0 0.2rem rgb(135, 148, 62 / 50%) !important;
 }
 
 /* Validación HTML5: estilos :valid e :invalid */
