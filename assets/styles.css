@@ -1,6 +1,6 @@
 /* ===== Variables CSS ===== */
 :root {
-    --primary-color: hsl(0, 0%, 0%);
+    --primary-color: hsl(0deg 0% 0%);
     --text-color: #212529;
     --light-bg: #f8f9fa;
     --border-color: #dee2e6;
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Georgia', serif, 'Helvetica Neue', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Georgia, serif, Helvetica Neue, Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
 }
@@ -89,7 +89,7 @@ a {
     background-color: #6d545460;
     border-color: #614242;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(167, 58, 58, 0.212);
+    box-shadow: 0 4px 8px rgb(167, 58, 58/ 25%) !important;
 }
 
 /* ===== Formulario ===== */
@@ -102,7 +102,7 @@ a {
 
 .form-control:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(135, 148, 62, 0.25);
+    box-shadow: 0 0 0 0.2rem rgb(135, 148, 62/ 50%) !important;
 }
 
 /* Validación HTML5: estilos :valid e :invalid */
