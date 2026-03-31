@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandra Pizarnik</title>
+    <title>Alejandra Pizarnik inicio</title>
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS personalizado -->
@@ -14,13 +14,13 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Madame Pizarnik</a>
-                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ALGO">
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                        </button>
 
-                <div class="collapse navbar-collapse" id="ALGO">
+                <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ms-auto"> <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Mejores escritos</a>
+                    <a class="nav-link active" href="#articulos">Los mas aclamados</a>
                      </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">Acerca de la poeta maldita</a>
@@ -33,10 +33,6 @@
     </div>
 </nav>
 
-            <!-- TODO: agregar toggler y nav-items -->
-        </div>
-    </nav>
-
     <!-- Hero section -->
     <header class="bg-gradient text-blue py-5">
         <div class="container text-center">
@@ -46,15 +42,14 @@
     </header>
 
     <!-- Main: listado de artículos -->
-    <main class="py-5">
+    <main id= "articulos" class="py-5">
         <div class="container">
-            <h2 class="mb-4">Los mas aclamados</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="assets/images/asb2.png" class="card-img-top" alt="El paso de la infancia a la adultez">
+                        <img src="assets/images/photo1.jpg" class="card-img-top" alt="El paso de la infancia a la adultez">
                         <div class="card-body">
-                            <h5 class="card<br>-title">La ultima inocencia</h5>
+                            <h5 class="card-title">La ultima inocencia</h5>
                             <p class="card-text text-muted">Alejandra Pizarnik</p>
                             <p class="card-text"> Partir <br> 
                                 en cuerpo y alma <br> partir <br>
@@ -68,7 +63,7 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="assets/images/abs3.png" class="card-img-top" alt="Ser consciente no libera">
+                        <img src="assets/images/photo2.png" class="card-img-top" alt="Ser consciente no libera">
                         <div class="card-body">
                             <h5 class="card-title">El despertar</h5>
                             <p class="card-text text-muted">Alejandra Pizarnik</p>
@@ -86,7 +81,7 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="assets/images/photo1.jpg" class="card-img-top" alt="Algo persiste, pero sin explicación">
+                        <img src="assets/images/photo3.png" class="card-img-top" alt="Algo persiste, pero sin explicación">
                         <div class="card-body">
                             <h5 class="card-title">Presencia</h5>
                             <p class="card-text text-muted">Alejandra Pizarnik</p>
@@ -95,8 +90,7 @@
                             de mi mirada <br> 
                             ellas me desposeen <br> 
                             hacen de mí un barco sobre un río de piedras <br> 
-                            si no es tu voz <br> 
-                            lluvia sola en mi silencio de fiebres <br> </p>
+                            si no es tu voz <br>  </p>
                                 <a href="#" class="btn btn-primary btn-sm">Leer más</a>
                         </div>
                     </div>
@@ -108,7 +102,12 @@
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
             <p>&copy; Tributo a Pizarnik - Todos los derechos reservados.</p>
-            <!-- TODO: agregar redes sociales -->
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <a href="https://www.facebook.com/alejandra.pizarnik" class="text-white mx-2" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/alejandra.pizarnik" class="text-white mx-2" target="_blank">Instagram</a>
+            <a href="https://twitter.com/alejandrapizarn" class="text-white mx-2" target="_blank">Twitter</a>
         </div>
     </footer>
 
