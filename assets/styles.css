@@ -1,6 +1,6 @@
 /* ===== Variables CSS ===== */
 :root {
-    --primary-color: #0d6efd;
+    --primary-color: hsl(0, 15%, 18%);
     --text-color: #212529;
     --light-bg: #f8f9fa;
     --border-color: #dee2e6;
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Georgia', serif, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
 }
@@ -36,12 +36,13 @@ a {
 
 /* ===== Navbar ===== */
 .navbar {
+    background-color: #1a1a1a !important;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    letter-spacing: 0.5px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
 }
 
 .navbar-brand:hover {
@@ -50,7 +51,8 @@ a {
 
 /* ===== Hero Section ===== */
 .bg-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #e9ecef !important;
+    border-bottom: 1px solid var(--border-color);
 }
 
 /* ===== Cards ===== */
@@ -84,10 +86,10 @@ a {
 }
 
 .btn-primary:hover {
-    background-color: #0b5ed7;
-    border-color: #0b5ed7;
+    background-color: #6d545460;
+    border-color: #614242;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgb(13 110 253 / 30%);
+    box-shadow: 0 4px 8px rgba(167, 58, 58, 0.212);
 }
 
 /* ===== Formulario ===== */
@@ -100,7 +102,7 @@ a {
 
 .form-control:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgb(13 110 253 / 25%);
+    box-shadow: 0 0 0 0.2rem rgba(135, 148, 62, 0.25);
 }
 
 /* Validación HTML5: estilos :valid e :invalid */
@@ -153,7 +155,7 @@ input:focus {
 }
 
 footer a:hover {
-    color: white;
+    color: rgba(136, 122, 122, 0.726);
 }
 
 /* ===== Responsive ===== */
@@ -182,7 +184,7 @@ footer a:hover {
     top: -40px;
     left: 0;
     background: var(--primary-color);
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 8px;
     text-decoration: none;
 }
