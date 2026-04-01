@@ -1,4 +1,4 @@
-/* ===== Variables CSS ===== */
+/* ===== Variables CSS ===== 01/04/26 agregar sticky footer como navbar*/
 :root {
     --primary-color: hsl(0deg 0% 0%);
     --text-color: #212529;
@@ -7,21 +7,42 @@
 }
 
 /* ===== Reset y base ===== */
+/* MEJORADO CON STICKY FOOTER COMO NAVBAR :D */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
-    scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Georgia, serif, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
+  height: 100%;
+  font: 1.2em sans-serif;
 }
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.page-header,
+.page-footer {
+  background-color: rgb(75 70 74);
+  color: white;
+  padding: 20px;
+}
+
+.page-body {
+  padding: 20px;
+}
+
+.page-body p {
+  border: 1px solid grey;
+}
+
 
 /* ===== Tipografía ===== */
 h1, h2, h3 {
@@ -139,7 +160,7 @@ a {
 /* ===== Footer ===== */
 footer {
     margin-top: auto;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid black;
 }
 
 footer a {
@@ -150,7 +171,7 @@ footer a {
 a:focus,
 button:focus,
 input:focus {
-    outline: 2px solid var(--primary-color);
+    outline: 2px solid black;
     outline-offset: 2px;
 }
 
